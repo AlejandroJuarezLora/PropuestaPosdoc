@@ -1,0 +1,24 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Planteamiento del problema}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Justificación}{3}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Respecto a la ciencia de frontera}{3}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Respecto al desarrollo de la sociedad mexicana}{3}{subsubsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.3}Objetivos}{4}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Objetivo General}{4}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Objetivos Específicos}{4}{subsubsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.4}Pregunta de investigación}{5}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Marco Teórico}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Redes neuronales y su implementación en hardware}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Celdas estandar neuromórficas propuestas}{5}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Neurona LIF}{5}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Sinapsis STDP}{6}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}Relevancia técnica del proyecto}{8}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Metodología}{10}{section.3}%
+\contentsline {section}{\numberline {4}Cronograma}{11}{section.4}%
+\contentsline {section}{\numberline {5}Actividades complementarias}{13}{section.5}%
+\contentsline {section}{\numberline {6}Recursos}{14}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Recursos materiales}{14}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Recursos humanos}{14}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Resultados Esperados}{14}{section.7}%
+\contentsline {section}{\numberline {8}Referencias Bibliográficas}{14}{section.8}%

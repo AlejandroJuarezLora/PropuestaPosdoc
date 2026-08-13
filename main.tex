@@ -80,7 +80,7 @@ Se han realizado numerosos esfuerzos en circuitos SNN analógicos CMOS, que abar
 
 
 El conocimiento técnico y de alto nivel que requiere este proyecto está relacionado a software EDA (del inglés: Electronic Design Automation) y de desarrollo de prototipos de hardware en CMOS tipo ASIC \cite{weste2011cmos}. La tabla (\ref{tab:vlsi_specializations}) presenta las especialidades y habilidades técnicas requeridas en este ámbito.
-Este proyecto incluye como una labor preponderante la formación de personal humano, identificado éste como estudiantes de pregrado y posgrado en áreas de las ciencias de la ingeniería electrónica, los cuales desarrollarían tareas esenciales durante el proyecto. El conocimiento y experiencia adquiridos aumentarían en estos estudiantes las posibilidades para incorporarse al ámbito laboral relacionado al diseño de semiconductores y de sistemas electrónicos avanzados; por ejemplo, las de tecnologías de Sistemas en Chip (en inglés: Systems-on-Chip, SoC) y también al del empaquetado de circuitos. En esta gama técnica/laboral, diferentes entidades nacionales ya ofrecen oportunidades de empleo, lo cual viene a generar valor agregado dentro de la cadena productiva de la industria VLSI \cite{Valdes_2024} y en la movilidad social de los futuros participantes. 
+Este proyecto incluye como una labor preponderante la formación de personal humano, identificado éste como estudiantes de pregrado y posgrado en áreas de las ciencias de la ingeniería electrónica, los cuales pueden colaborar en tareas de diseño durante el proyecto. El conocimiento y experiencia adquiridos aumentarían en estos estudiantes las posibilidades para incorporarse al ámbito laboral relacionado al diseño de semiconductores y de sistemas electrónicos avanzados; por ejemplo, las de tecnologías de Sistemas en Chip (en inglés: Systems-on-Chip, SoC) y también al del empaquetado de circuitos. En esta gama técnica/laboral, diferentes entidades nacionales ya ofrecen oportunidades de empleo, lo cual viene a generar valor agregado dentro de la cadena productiva de la industria VLSI \cite{Valdes_2024} y en la movilidad social de los futuros participantes. 
 
 
 \begin{table}[htbp]
@@ -223,7 +223,7 @@ De lo anterior, se propone la metodología de ejecución de este proyecto basado
     \item \textbf{Diseño de celdas estándar neuromórficas:} Se realiza trabajo de diseño analógico de las celdas estándar a nivel esquematico (selección de geometrias de los transistores, caracterización de las celdas). Una vez consolidados los diseños, se procede a su implementación en layout. Simulación numérica da certeza del correcto funcionamiento de las celdas por separado
     \item \textbf{Composición de macroceldas:} Se procede a confeccionar capas de neuronas usando descripción estructural con verilog, formato que permitirá automatizar la descripción las conexiones de nodos. Para realizar la sintesis física de las macroceldas, se proporcionan los archivos verilog resultantes a software especializado de síntesis física (i.e. Cadence, Synosis, Librelane) que trata a las celdas neuromórficas como cajas negras, y enrutan correctamente la conexión de puertos. Así también, se procederá con el desarrollo de otras macroceldas como matrices de $i\times j$ sinapsis, que comunican las $i$ neuronas de las capa previa con las $j$ neuronas de la capa anterior. 
     \item \textbf{Verificación de las macroceldas:} El funcionamiento de las macroceldas, tanto de manera individual como en conjunto debe ser verificado para su fabricación. Se procede entonces a hacer el DRC (Revisión de reglas de diseño), ERC (revisión de reglas eléctricas) y la síntesis de la señal de reloj (CTS). 
-     \item \textbf{Preparativos para el tapeout:} Se debe entonces preparar la configuración necesaria para incluir el diseño en una corrida de fabricación de oblea multiproyecto (multiproyect wafer). Dicha preparación incluye asignación y preparación de puertos, creacion de bancos de pruebas para su fabricación y documentación pertinente. 
+     \item \textbf{Preparativos para el tapeout:} Se debe entonces preparar la configuración necesaria para incluir el diseño en una oblea multiproyecto (multiproyect wafer). Dicha preparación incluye asignación y preparación de puertos, creacion de bancos de pruebas y documentación pertinente. 
 \end{itemize}
 
 El objetivo entonces no es solo tener un layout de una SNN terminada, sino tambien, diseñar la infraestructura de software de automatización que permita sintetizar SNNs en función de los parametros de red (numero de neuronas, numero de capas, etc.). El diagrama de flujo en la fig. \ref{fig:flowchart_neuromorphic} despliega la metodología a seguir de manera resumida
@@ -254,7 +254,7 @@ El objetivo entonces no es solo tener un layout de una SNN terminada, sino tambi
 
 \node (dec3) [decision, below=0.2cm of step7] {¿Síntesis Exitosa?\\(DRC, ERC, CTS)};
 
-\node (step8) [process, below=0.4cm of dec3] {Envío a Fabricación};
+\node (step8) [process, below=0.4cm of dec3] {Cierre del trabajo de diseño};
 
 \node (stop) [startstop, below=0.2cm of step8] {Fin};
 
@@ -292,10 +292,10 @@ El objetivo entonces no es solo tener un layout de una SNN terminada, sino tambi
 La tabla \ref{tab:cronograma} incluye un cronograma de actividades que desglosa las fases de investigación, comprendidas a lo largo de 2 años  de investigación. Las actividades a realizar en cada fase están descritas a continuación:
 
 \begin{itemize}
-    \item \textbf{Fase 1 (Febrero a Julio del 2027):} En esta fase se evaluará en el estado del arte la tecnologías disponibles en el desarrollo de semiconductores, que ofrezcan las capacidades en FEOL (Front end of the Line)  para fabricar nuestros diseños. A su vez, se diseñaran simulaciones numericas en software especializado de codigo abierto para mostrar resultados preeliminares de una estructura de SNN analogica de proposito general. (Entregable: Informe del edo. del arte: un diseño preeliminar en esquemático, simulaciones pre-layout, posibles fabricantes + cotizaciones de fabricación, documento de requerimentos del producto minimo viable)
+    \item \textbf{Fase 1 (Febrero a Julio del 2027):} En esta fase se evaluará en el estado del arte la tecnologías disponibles en el desarrollo de semiconductores, que ofrezcan las capacidades en FEOL (Front end of the Line)  para nuestros diseños. A su vez, se diseñaran simulaciones numericas en software especializado de codigo abierto para mostrar resultados preeliminares de una estructura de SNN analogica de proposito general. (Entregable: Informe del edo. del arte: un diseño preeliminar en esquemático, simulaciones pre-layout, posibles fabricantes + cotizaciones de fabricación, documento de requerimentos del producto minimo viable)
     \item \textbf{Fase 2 (Agosto del 2027 a Enero del 2028):}  En esta fase, se desarrollaran los layouts, simulación post-layout y verificación funcional de las celdas estándar neuromórficas. Se realizarán los correspondientes análisis energéticos, de verificación y funcionales que garanticen el correcto funcionamiento del dispositivo una vez fabricado.  Al final de esta fase se deberá contar un archivo GDSII de cada una de las celdas neuromórficas propuestas en(Entregable: Informe de actividades: - Diseño del circuito en esquematico - Implementación en layout - Layout vs Schematic del circuito - Simulación post-layout - Carpeta con la estructura de archivos .v, .mag)
-    \item \textbf{Fase 3 (Febrero del 2028 a Julio del 2028):} Integración de macroceldas. Usando las subceldas y software especializado de sintesis física de software libre, se trabajara en la configuración y composición de macroceldas para la red, como capas de neuronas, arreglos de sinapsis stdp, codificadores de entrada, decodificadores de salida. Estas macroceldas daran pie a la construcción de la SNN analógica, completa. Su composición requiere la creación de archivos .v para describir la estructura de conexión de nodos, y la creación de archivos de configuración como para el software de síntesis física. (Entregable: layout de la red SNN, scripts de automatización de layout usando librelane)
-    \item \textbf{Fase 4 (Agosto del 2028 a Enero del 2029):} Para esta fase se enfocará en recopilar, procesar y reportar los resultados obtenidos, con la finalidad de generar los reportes académicos correspondientes (artículos, ponencias, carteles, presentaciones para congresos). Tambien, dichos archivos deberán ser preparados y enviados a su fabricación, por lo que se haran las gestiones pertinentes. sse revisara el desempeño del dispositivo resultante con miras a realizar un segundo prototipo con mejoras en desempeño energético y escalabilidad, que permita implementar soluciones de IA de mayor tamaño. (Entregable: Reporte final de actividades: - Diseños de circuito finales, - Reportes de desempeño - Discusión - Conclusiones y trabajo futuro) 
+    \item \textbf{Fase 3 (Febrero del 2028 a Julio del 2028):} Integración de macroceldas. Usando las subceldas y software especializado de sintesis física de software libre, se trabajara en la configuración y composición de macroceldas para la red, como capas de neuronas, arreglos de sinapsis stdp, codificadores de entrada, decodificadores de salida. Estas macroceldas daran pie a la construcción de la SNN analógica, completa. Su composición requiere la creación de archivos .v para describir la estructura de conexión de nodos, y la creación de archivos de configuración como para el software de síntesis física. (Entregable: archivo .gdsII del layout de la red SNN , scripts de automatización de layout usando Librelane)
+    \item \textbf{Fase 4 (Agosto del 2028 a Enero del 2029):} Para esta fase se enfocará en recopilar, procesar y reportar los resultados obtenidos, con la finalidad de generar los reportes académicos correspondientes (artículos, ponencias, carteles, presentaciones para congresos). Se revisara el desempeño del dispositivo resultante mediante simulaciones numericas con miras a realizar un segundo prototipo con mejoras en desempeño energético y escalabilidad a trabajo futuro, que permita implementar soluciones de IA de mayor tamaño. (Entregable: Reporte final de actividades: - Diseños de circuito finales, - Reportes de desempeño - Discusión - Conclusiones y trabajo futuro) 
 \end{itemize}
 
 \section{Actividades complementarias}
@@ -304,8 +304,7 @@ Debido a la naturaleza del proyecto, a lo largo de las fases pronosticadas, se t
 
 \begin{itemize}
     \item Capacitación y formación de estudiantes de pregrado y posgrado en el área de desarrollo de control automático, semiconductores, inteligencia artificial  mediante cursos y/o talleres.
-    \item Participación con grupos de estudiantes de posgrado y pregado en iniciativas de concurso de desarrollo de dispositivos semiconductores (Chipathon).
-    \item Dirección de trabajo de tesis de estudiantes de pregrado y posgrado, que sirvan como subcomponentes del proyecto que cubre el objetivo general.
+    \item Participación con grupos de estudiantes de posgrado y pregado en iniciativas de concurso de desarrollo de dispositivos semiconductores (Chipathon) organizados por instituciones normativas en diseño VLSI, como IEEE.
     \item Publicación de resultados preliminares y finales en revistas con indice JCR, especializadas en telecomunicaciones, procesamiento de señales, cómputo neuromórfico, entre otros.
 \end{itemize}
 
@@ -332,7 +331,7 @@ Debido a la naturaleza del proyecto, a lo largo de las fases pronosticadas, se t
     \end{tabularx}
 \end{table}
 
-\section{Recursos y Presupuesto}
+\section{Recursos}
 \subsection{Recursos materiales}
 % Materiales necesarios
 \begin{itemize}
@@ -345,27 +344,14 @@ Debido a la naturaleza del proyecto, a lo largo de las fases pronosticadas, se t
 % Personal requerido
 A lo largo del desarrollo del proyecto, se espera contar con estudiantes de licenciatura y de posgrado, que colaboren con el diseño, verificación, análisis y síntesis de distintos subcomponentes del hardware implementado, asi como con los bancos de prueba de control de lazo cerrado pertinentes.
 
-\subsection{Presupuesto estimado}
-% Estimación de costos
-
-\begin{itemize}
-    \item Fabricación de dos lotes de semiconductores para inversión (200 mil pesos)
-    \item Fabricación de PCBs y circuitería periférica (20 mil pesos)
-    \item Gastos generados de la publicación de resultados en artículo JCR 
-    \item Taller de diseño y simulación de sistemas VLSI en software libre  (10 mil pesos)
-\end{itemize}
 
 
 \section{Resultados Esperados}
 % Posibles hallazgos e impacto
 \begin{itemize}
-    \item  Formación de recursos humanos en cómputo analógico, procesamiento de señales y desarrollo VLSI, mediante cursos
- de licenciatura, posgrado y talleres a lo largo del año.
-    \item Diseño y fabricación de prototipos de circuitos CMOS para implentación de algoritmos de aprendizaje automático en bajo consumo. 
-    \item Desarrollo de aplicaciones: En medicina, transporte, alimentos, problemas nacionales diversos.
-    \item Dirección de trabajo de tesis de estudiantes de licenciatura, maestría y doctorado.
-    \item Publicación de los resultados teóricos y práctico del proyecto.
-    \item Tramitar la protección intelectual de los productos relevantes.
+    \item  Formación de recursos humanos en cómputo analógico, procesamiento de señales y desarrollo VLSI, mediante talleres y seminarios a lo largo de la estancia posdoctoral
+    \item Diseñode prototipos de circuitos CMOS para implentación de algoritmos de aprendizaje automático en bajo consumo. 
+    \item Publicación de los resultados teóricos y prácticos del proyecto en revistas de investigación.
     \end{itemize}
     
 \section{Referencias Bibliográficas}
